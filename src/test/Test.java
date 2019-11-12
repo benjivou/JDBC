@@ -1,11 +1,11 @@
 package test;
 
-import control.ConnexionBDD;
+import control.UpdateProduit;
 
 public class Test {
     public static void main(String[] args) {
         try {
-            new ConnexionBDD();
+            new UpdateProduit();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
         }

@@ -2,6 +2,7 @@
   <library name="mysql-connector-java-8.0.18">
     <CLASSES>
       <root url="jar://$PROJECT_DIR$/mysql-connector-java-8.0.18.jar!/" />
+      <root url="jar://$PROJECT_DIR$/../../LibrariesJava/mysql-connector-java-8.0.18.jar!/" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />

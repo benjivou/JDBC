@@ -8,10 +8,12 @@ import java.sql.SQLException;
 import configuration.*;
 
 public abstract class ConnexionAbstract {
-    private Connection conn;
+    protected Connection conn;
 
-    public Connection getConn() {
-        return conn;
+    protected Object result;
+
+    public Object getResult() {
+        return result;
     }
 
     public void setConn(Connection conn) {
@@ -20,6 +22,7 @@ public abstract class ConnexionAbstract {
 
     public ConnexionAbstract() throws ClassNotFoundException {
         Class.forName("com.mysql.cj.jdbc.Driver");
+        Object res = null;
         try {
             conn= DriverManager.getConnection(
                     Config.URL,"root","");
